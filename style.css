@@ -470,6 +470,10 @@ button,input{font-family:inherit;font-size:inherit}
   .audience-grid{grid-template-columns:1fr;max-width:640px;margin:0 auto}
 }
 @media (max-width:960px){
+  .notify-form{flex-direction:column}
+  .notify-form .btn{width:100%}
+  .soon-grid .guide-card{flex-direction:column;align-items:stretch}
+  .soon-grid .guide-media{width:150px;margin:0 auto 18px}
   .nav-links,.nav-cta{display:none}
   .nav-toggle{display:block}
   .nav{height:80px}
