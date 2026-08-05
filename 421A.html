@@ -192,9 +192,11 @@
       </div>
       <div class="reveal">
         <!-- EDIT HERE: point this form at your email provider endpoint (see README) -->
-        <form class="newsletter-form" data-ok="Subscribed! Welcome aboard.">
+        <form class="newsletter-form" data-ok="Subscribed! Welcome aboard." action="https://formspree.io/f/xjybvbzj" method="POST">
+        <input type="hidden" name="_subject" value="New newsletter signup: 421A hub">
+        <input type="hidden" name="source" value="421A companion hub newsletter">
           <label style="position:absolute;left:-9999px" for="nl421A">Email address</label>
-          <input id="nl421A" type="email" required placeholder="you@email.com" autocomplete="email">
+          <input id="nl421A" name="email" type="email" required placeholder="you@email.com" autocomplete="email">
           <button class="btn btn-primary" type="submit">Subscribe</button>
         </form>
         <p class="form-ok" role="status"></p>

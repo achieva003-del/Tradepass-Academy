@@ -89,18 +89,47 @@
     document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
   }
 
-  /* ---------- Forms (front-end confirmation only) ----------
-     To collect real emails, point each <form> at a provider
-     endpoint (Formspree, Mailchimp, ConvertKit...), see README. */
+  /* ---------- Forms ----------
+     If a form has an action= (Formspree endpoint), submit it for real via
+     fetch and show the confirmation on success, or a clear error if it
+     fails. Forms with no action (not yet connected) keep the old
+     confirmation-only behaviour so nothing breaks before setup. */
   document.querySelectorAll('form[data-ok]').forEach(function (f) {
     f.addEventListener('submit', function (ev) {
       ev.preventDefault();
       var ok = f.parentElement.querySelector('.form-ok') || f.nextElementSibling;
-      if (ok && ok.classList.contains('form-ok')) {
-        ok.textContent = f.getAttribute('data-ok');
+      var showMsg = function (text, isError) {
+        if (!ok || !ok.classList.contains('form-ok')) return;
+        ok.textContent = text;
+        ok.style.color = isError ? '#C62828' : '';
         ok.classList.add('show');
+      };
+      var action = f.getAttribute('action');
+      if (!action) {
+        // Not yet connected to a form service; keep prior UI-only behaviour.
+        showMsg(f.getAttribute('data-ok'), false);
+        f.reset();
+        return;
       }
-      f.reset();
+      var submitBtn = f.querySelector('button[type="submit"]');
+      var originalLabel = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
+      fetch(action, {
+        method: 'POST',
+        body: new FormData(f),
+        headers: { Accept: 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          showMsg(f.getAttribute('data-ok'), false);
+          f.reset();
+        } else {
+          showMsg('Something went wrong sending that. Please try again in a moment.', true);
+        }
+      }).catch(function () {
+        showMsg('Could not connect. Check your internet connection and try again.', true);
+      }).finally(function () {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalLabel; }
+      });
     });
   });
 
