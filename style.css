@@ -286,8 +286,17 @@ button,input{font-family:inherit;font-size:inherit}
 .newsletter-form input::placeholder{color:#8E9CB3}
 .newsletter-form input:focus{outline:none;border-color:var(--gold);background:rgba(255,255,255,.1)}
 .newsletter-note{margin-top:14px;font-size:.85rem;color:#8E9CB3}
-.form-ok{display:none;margin-top:14px;font-weight:600;font-size:.95rem;color:#7FC48F}
-.form-ok.show{display:block}
+.form-ok{display:none;align-items:center;gap:9px;margin-top:14px;font-family:'Archivo',sans-serif;font-weight:800;font-size:.92rem;color:#1F6B33;background:#EDF6EF;border:1px solid #BFE2C7;border-radius:100px;padding:10px 16px}
+.form-ok::before{content:"";flex:none;width:18px;height:18px;border-radius:100px;background:#1F6B33;position:relative}
+.form-ok::after{content:"";position:absolute;width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:translate(5px,6px) rotate(-45deg)}
+.form-ok.show{display:inline-flex}
+.form-ok.error{color:#A61F1F;background:#FBEDED;border-color:#F0C9C9}
+.form-ok.error::before{background:#A61F1F}
+.newsletter .form-ok{background:rgba(127,196,143,.14);border-color:rgba(127,196,143,.4);color:#9FE3B0}
+.newsletter .form-ok::before{background:#9FE3B0}
+.newsletter .form-ok::after{border-color:#0F1D33}
+.newsletter .form-ok.error{background:rgba(198,40,40,.16);border-color:rgba(198,40,40,.4);color:#FF9B9B}
+.newsletter .form-ok.error::before{background:#FF9B9B}
 
 /* ---------- Sub-pages: page hero & breadcrumbs ---------- */
 .page-hero{position:relative;padding:168px 0 72px;background:linear-gradient(180deg,var(--bg) 0%,#fff 100%);overflow:hidden}

@@ -101,7 +101,7 @@
       var showMsg = function (text, isError) {
         if (!ok || !ok.classList.contains('form-ok')) return;
         ok.textContent = text;
-        ok.style.color = isError ? '#C62828' : '';
+        ok.classList.toggle('error', !!isError);
         ok.classList.add('show');
       };
       var action = f.getAttribute('action');
