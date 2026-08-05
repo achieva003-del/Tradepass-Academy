@@ -204,17 +204,19 @@ button,input{font-family:inherit;font-size:inherit}
 .guide-actions .btn{padding:13px 12px;font-size:14.5px}
 .guide-card--soon .cover{filter:grayscale(.55) brightness(.92)}
 .soon-ribbon{position:absolute;top:16px;right:-44px;transform:rotate(38deg);background:var(--gold);color:#3A2C05;font-family:'Archivo',sans-serif;font-weight:800;font-size:10px;letter-spacing:.12em;padding:5px 48px;z-index:3;box-shadow:0 4px 10px rgba(0,0,0,.14);white-space:nowrap}
-.notify-form{display:flex;gap:10px}
+.notify-form{display:flex;flex-direction:column;gap:10px}
 .notify-form input{flex:1;min-width:0;border:2px solid var(--line);border-radius:10px;padding:12px 15px;font-size:14.5px;color:var(--ink);background:#fff;transition:border-color .2s}
 .notify-form input:focus{outline:none;border-color:var(--red)}
-.notify-form .btn{padding:12px 18px;font-size:14px}
+.notify-form .btn{padding:12px 18px;font-size:14px;width:100%}
 .soon-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
 .soon-grid .guide-card{flex-direction:row;gap:26px;align-items:center}
 .soon-grid .guide-media{margin-bottom:0;flex:none;width:150px;overflow:hidden;border-radius:12px}
 .soon-grid .guide-media .cover{width:100%;margin:0;box-shadow:none}
 .soon-grid .guide-body{flex:1;min-width:0;display:flex;flex-direction:column}
 .soon-grid .guide-card h3{font-size:1.16rem}
-.soon-grid .guide-card p{margin-bottom:18px}
+.soon-grid .guide-card p{margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.soon-grid .guide-card{padding:22px 22px 24px}
+.soon-grid{gap:24px}
 
 /* ---------- Look inside ---------- */
 .inside-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
@@ -286,8 +288,17 @@ button,input{font-family:inherit;font-size:inherit}
 .newsletter-form input::placeholder{color:#8E9CB3}
 .newsletter-form input:focus{outline:none;border-color:var(--gold);background:rgba(255,255,255,.1)}
 .newsletter-note{margin-top:14px;font-size:.85rem;color:#8E9CB3}
-.form-ok{display:none;margin-top:14px;font-weight:600;font-size:.95rem;color:#7FC48F}
-.form-ok.show{display:block}
+.form-ok{display:none;align-items:center;gap:9px;margin-top:14px;font-family:'Archivo',sans-serif;font-weight:800;font-size:.92rem;color:#1F6B33;background:#EDF6EF;border:1px solid #BFE2C7;border-radius:100px;padding:10px 16px}
+.form-ok::before{content:"";flex:none;width:18px;height:18px;border-radius:100px;background:#1F6B33;position:relative}
+.form-ok::after{content:"";position:absolute;width:9px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:translate(5px,6px) rotate(-45deg)}
+.form-ok.show{display:inline-flex}
+.form-ok.error{color:#A61F1F;background:#FBEDED;border-color:#F0C9C9}
+.form-ok.error::before{background:#A61F1F}
+.newsletter .form-ok{background:rgba(127,196,143,.14);border-color:rgba(127,196,143,.4);color:#9FE3B0}
+.newsletter .form-ok::before{background:#9FE3B0}
+.newsletter .form-ok::after{border-color:#0F1D33}
+.newsletter .form-ok.error{background:rgba(198,40,40,.16);border-color:rgba(198,40,40,.4);color:#FF9B9B}
+.newsletter .form-ok.error::before{background:#FF9B9B}
 
 /* ---------- Sub-pages: page hero & breadcrumbs ---------- */
 .page-hero{position:relative;padding:168px 0 72px;background:linear-gradient(180deg,var(--bg) 0%,#fff 100%);overflow:hidden}
@@ -472,8 +483,6 @@ button,input{font-family:inherit;font-size:inherit}
   .audience-grid{grid-template-columns:1fr;max-width:640px;margin:0 auto}
 }
 @media (max-width:960px){
-  .notify-form{flex-direction:column}
-  .notify-form .btn{width:100%}
   .soon-grid .guide-card{flex-direction:column;align-items:stretch}
   .soon-grid .guide-media{width:150px;margin:0 auto 18px}
   .nav-links,.nav-cta{display:none}
@@ -520,7 +529,6 @@ button,input{font-family:inherit;font-size:inherit}
   .gd-actions .btn{width:100%}
   .guide-actions{grid-template-columns:1fr}
   .newsletter-form{flex-direction:column}
-  .notify-form{flex-direction:column}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;text-align:center}
   .soon-grid .guide-card{flex-direction:column;align-items:flex-start}
