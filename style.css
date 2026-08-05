@@ -512,6 +512,9 @@ button,input{font-family:inherit;font-size:inherit}
   body{font-size:16px}
   .hero-leaf{display:none}
   .container{padding:0 20px}
+  .welcome-panel{flex-direction:column;padding:24px 22px;gap:14px}
+  .help-strip .container{gap:16px 20px}
+  .help-strip-item{font-size:13.5px}
   .why-grid{grid-template-columns:1fr}
   .res-grid{grid-template-columns:1fr}
   .updates-grid{grid-template-columns:1fr}
@@ -571,3 +574,27 @@ button,input{font-family:inherit;font-size:inherit}
 .review-head{margin:36px 0 18px;font-family:'Archivo',sans-serif;font-weight:800;font-size:1.3rem;color:var(--charcoal)}
 @media (max-width:960px){.dl-grid{grid-template-columns:1fr}}
 @media (max-width:640px){.fc-controls .btn,.quiz-nav .btn{flex:1}}
+
+/* ---------- Hub welcome panel ---------- */
+.welcome-panel{background:var(--navy);border-radius:var(--r-lg);padding:32px 36px;margin-top:28px;display:flex;gap:20px;align-items:flex-start;position:relative;overflow:hidden}
+.welcome-panel::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:36px 36px}
+.welcome-panel > *{position:relative}
+.welcome-ico{flex:none;width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:var(--gold)}
+.welcome-ico svg{width:24px;height:24px}
+.welcome-panel h2{color:#fff;font-size:1.3rem;font-weight:800;margin-bottom:8px}
+.welcome-panel p{color:#C6D0E0;font-size:.98rem;margin-bottom:0}
+
+/* ---------- Hub help strip ---------- */
+.help-strip{background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0}
+.help-strip .container{display:flex;align-items:center;justify-content:center;gap:36px;flex-wrap:wrap}
+.help-strip-item{display:flex;align-items:center;gap:9px;font-family:'Archivo',sans-serif;font-weight:700;font-size:14.5px;color:var(--charcoal)}
+.help-strip-item svg{width:17px;height:17px;color:var(--red);flex:none}
+.help-strip-item a{color:var(--charcoal);transition:color .2s}
+.help-strip-item a:hover{color:var(--red)}
+
+/* ---------- Live cross-sell card (not "coming soon") ---------- */
+.guide-card--live .cover{filter:none}
+
+/* ---------- Disabled button (pending real link) ---------- */
+.btn-pending{opacity:.55;cursor:not-allowed;pointer-events:none}
+.btn-pending:hover{transform:none;box-shadow:none}
