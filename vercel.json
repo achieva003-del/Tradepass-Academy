@@ -1,0 +1,54 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/flashcards/309A",
+      "destination": "/flashcards-309A.html"
+    },
+    {
+      "source": "/quiz/309A",
+      "destination": "/quiz-309A.html"
+    },
+    {
+      "source": "/updates/309A",
+      "destination": "/updates-309A.html"
+    },
+    {
+      "source": "/flashcards/403A",
+      "destination": "/flashcards-403A.html"
+    },
+    {
+      "source": "/quiz/403A",
+      "destination": "/quiz-403A.html"
+    },
+    {
+      "source": "/updates/403A",
+      "destination": "/updates-403A.html"
+    },
+    {
+      "source": "/flashcards/421A",
+      "destination": "/flashcards-421A.html"
+    },
+    {
+      "source": "/quiz/421A",
+      "destination": "/quiz-421A.html"
+    },
+    {
+      "source": "/updates/421A",
+      "destination": "/updates-421A.html"
+    },
+    {
+      "source": "/flashcards/442A",
+      "destination": "/flashcards-442A.html"
+    },
+    {
+      "source": "/quiz/442A",
+      "destination": "/quiz-442A.html"
+    },
+    {
+      "source": "/updates/442A",
+      "destination": "/updates-442A.html"
+    }
+  ]
+}

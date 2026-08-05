@@ -1,0 +1,186 @@
+{
+ "trade": "Construction Electrician",
+ "code": "309A",
+ "cards": [
+  {
+   "chapter": "Safety",
+   "q": "Test\u2013verify\u2013test",
+   "a": "Prove your meter on a known live source, test the circuit for absence of voltage, then prove the meter again.",
+   "tip": "The meter is checked twice; the circuit once."
+  },
+  {
+   "chapter": "Safety",
+   "q": "Class A GFCI trip level",
+   "a": "Approximately 4 to 6 milliamperes of ground-fault current.",
+   "tip": "\u201cFour to six keeps hearts in ticks.\u201d"
+  },
+  {
+   "chapter": "Safety",
+   "q": "CSA Z462",
+   "a": "The Canadian workplace electrical safety standard covering safe work practices, arc flash and shock protection.",
+   "tip": "CEC = installation; Z462 = how you work on it."
+  },
+  {
+   "chapter": "Theory",
+   "q": "Ohm's law",
+   "a": "E = I \u00d7 R. Voltage equals current times resistance.",
+   "tip": "Cover the unknown in the E-I-R triangle."
+  },
+  {
+   "chapter": "Theory",
+   "q": "Series circuit rule",
+   "a": "Current is the same everywhere; source voltage divides across the loads.",
+   "tip": "\u201cVolts divide in series.\u201d"
+  },
+  {
+   "chapter": "Theory",
+   "q": "Parallel circuit rule",
+   "a": "Voltage is the same across every branch; current divides inversely with resistance.",
+   "tip": "\u201cAmps divide in parallel.\u201d"
+  },
+  {
+   "chapter": "Theory",
+   "q": "I\u00b2R heating",
+   "a": "Power lost as heat equals current squared times resistance \u2014 doubling current quadruples the heat.",
+   "tip": "Loose (resistive) joints burn because of I\u00b2R."
+  },
+  {
+   "chapter": "Theory",
+   "q": "Kirchhoff's voltage law",
+   "a": "Around any closed loop, the sum of voltage drops equals the source voltage.",
+   "tip": "What the source gives, the loop takes."
+  },
+  {
+   "chapter": "AC theory",
+   "q": "RMS value",
+   "a": "The effective value of an AC quantity \u2014 equal in heating effect to the same DC value. Meters read RMS.",
+   "tip": "Peak = RMS \u00d7 1.414."
+  },
+  {
+   "chapter": "AC theory",
+   "q": "ELI the ICE man",
+   "a": "In an inductor (L), voltage E leads current I. In a capacitor (C), current I leads voltage E.",
+   "tip": "Say it out loud in the exam \u2014 everyone does."
+  },
+  {
+   "chapter": "AC theory",
+   "q": "Inductive reactance",
+   "a": "XL = 2\u03c0fL, in ohms. Rises with frequency and inductance.",
+   "tip": "L likes low frequency; XL grows as f grows."
+  },
+  {
+   "chapter": "AC theory",
+   "q": "Capacitive reactance",
+   "a": "XC = 1 \u00f7 (2\u03c0fC), in ohms. Falls as frequency rises.",
+   "tip": "Capacitors pass high frequencies."
+  },
+  {
+   "chapter": "AC theory",
+   "q": "Impedance",
+   "a": "Total AC opposition: Z = \u221a(R\u00b2 + X\u00b2), in ohms.",
+   "tip": "Pythagoras with resistance and reactance."
+  },
+  {
+   "chapter": "AC theory",
+   "q": "Power factor",
+   "a": "True power divided by apparent power: PF = W \u00f7 VA = cos \u03b8. Never greater than 1.",
+   "tip": "Capacitors correct a lagging PF."
+  },
+  {
+   "chapter": "Three-phase",
+   "q": "Wye connection",
+   "a": "Three windings joined at a common neutral point. Line voltage = phase voltage \u00d7 \u221a3.",
+   "tip": "The letter Y has a centre \u2014 so does the connection."
+  },
+  {
+   "chapter": "Three-phase",
+   "q": "Delta connection",
+   "a": "Three windings joined end-to-end in a closed triangle; no neutral. Line current = phase current \u00d7 \u221a3.",
+   "tip": "Delta: voltage same, current \u221a3."
+  },
+  {
+   "chapter": "Three-phase",
+   "q": "\u221a3",
+   "a": "1.732 \u2014 the factor in every three-phase line calculation.",
+   "tip": "\u201cSeventeen-thirty-two, three-phase for you.\u201d"
+  },
+  {
+   "chapter": "Machines",
+   "q": "Synchronous speed",
+   "a": "nS = 120f \u00f7 P, in r/min. At 60 Hz: 3600, 1800, 1200, 900 for 2, 4, 6, 8 poles.",
+   "tip": "\u201c36\u201318\u201312\u20139.\u201d"
+  },
+  {
+   "chapter": "Machines",
+   "q": "Slip",
+   "a": "The percentage by which rotor speed falls below synchronous speed; typically 2\u20135% at full load.",
+   "tip": "No slip, no torque in an induction motor."
+  },
+  {
+   "chapter": "Machines",
+   "q": "Reversing a 3\u03c6 motor",
+   "a": "Interchange any two line conductors.",
+   "tip": "\u201cSwap two, reverse the rev.\u201d"
+  },
+  {
+   "chapter": "Machines",
+   "q": "Turns ratio",
+   "a": "EP \u00f7 ES = NP \u00f7 NS. Voltage follows turns; current follows the inverse.",
+   "tip": "Step voltage down, current steps up."
+  },
+  {
+   "chapter": "Machines",
+   "q": "kVA rating",
+   "a": "Transformers are rated in kVA because winding heat depends on current regardless of power factor.",
+   "tip": "kW = kVA \u00d7 PF."
+  },
+  {
+   "chapter": "Machines",
+   "q": "CT secondary rule",
+   "a": "Never open a current transformer's secondary while the primary is energized \u2014 dangerous voltage develops.",
+   "tip": "Short it before you lift a meter."
+  },
+  {
+   "chapter": "Code & install",
+   "q": "Ampacity",
+   "a": "The maximum current a conductor can carry continuously under its conditions of use.",
+   "tip": "Insulation, ambient, grouping, termination \u2014 four checks."
+  },
+  {
+   "chapter": "Code & install",
+   "q": "Grounding vs bonding",
+   "a": "Grounding ties the system to earth; bonding ties metal parts together to carry fault current and trip the protection.",
+   "tip": "\u201cGrounding goes to ground; bonding bonds the boxes.\u201d"
+  },
+  {
+   "chapter": "Code & install",
+   "q": "Small-conductor limits",
+   "a": "#14 Cu \u2192 15 A, #12 Cu \u2192 20 A, #10 Cu \u2192 30 A maximum overcurrent protection.",
+   "tip": "14-15, 12-20, 10-30."
+  },
+  {
+   "chapter": "Code & install",
+   "q": "Continuous load rule",
+   "a": "Limited to 80% of the overcurrent device rating unless the assembly is 100%-rated.",
+   "tip": "\u201cBreakers loaf at eighty.\u201d"
+  },
+  {
+   "chapter": "Code & install",
+   "q": "Raceway fill",
+   "a": "Three or more conductors may fill a maximum of 40% of the raceway cross-section.",
+   "tip": "Forty for three or more."
+  },
+  {
+   "chapter": "Controls",
+   "q": "Three-wire control",
+   "a": "Start\u2013stop with a seal-in contact: provides low-voltage protection, so no automatic restart after an outage.",
+   "tip": "Two-wire restarts; three-wire waits."
+  },
+  {
+   "chapter": "Controls",
+   "q": "Stop devices",
+   "a": "Normally closed, wired in series \u2014 any one opening stops the motor. Starts are normally open, in parallel.",
+   "tip": "\u201cStops in series, starts in parallel.\u201d"
+  }
+ ]
+}

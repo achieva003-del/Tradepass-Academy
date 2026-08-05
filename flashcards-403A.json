@@ -1,0 +1,54 @@
+{
+ "trade": "Red Seal Carpenter",
+ "code": "403A",
+ "cards": [
+  {
+   "chapter": "Spacing",
+   "q": "On centre (o.c.)",
+   "a": "The distance from the centre of one framing member to the centre of the next, e.g. studs at 16 in (406 mm) o.c.",
+   "tip": "Centre to centre, not edge to edge."
+  },
+  {
+   "chapter": "Wall framing",
+   "q": "King stud",
+   "a": "A full-height stud beside a wall opening, running sole plate to top plate, that the jack stud fastens to.",
+   "tip": "The king stands full height."
+  },
+  {
+   "chapter": "Wall framing",
+   "q": "Jack (trimmer) stud",
+   "a": "A shortened stud that supports the header ends and carries the load down to the sole plate.",
+   "tip": "The jack carries the header."
+  },
+  {
+   "chapter": "Wall framing",
+   "q": "Cripple stud",
+   "a": "A short stud above a header or below a sill that keeps regular spacing for sheathing and finishes.",
+   "tip": "Keeps the layout rhythm going."
+  },
+  {
+   "chapter": "Wall framing",
+   "q": "Sole plate",
+   "a": "The horizontal bottom member of a framed wall; also called the bottom plate.",
+   "tip": "The wall stands on its sole."
+  },
+  {
+   "chapter": "Wall framing",
+   "q": "Top plate",
+   "a": "The horizontal member at the top of a framed wall, usually doubled to tie walls together.",
+   "tip": "Doubled to lap at corners."
+  },
+  {
+   "chapter": "Measurement",
+   "q": "Board foot",
+   "a": "Lumber volume equal to 1 in \u00d7 12 in \u00d7 1 ft. BF = (T\u2033 \u00d7 W\u2033 \u00d7 L\u2032) \u00f7 12.",
+   "tip": "Thickness and width in inches, length in feet."
+  },
+  {
+   "chapter": "Materials",
+   "q": "Crown",
+   "a": "The natural bow along a board's edge; framing members install crown up so loads straighten them.",
+   "tip": "Crown up, load down."
+  }
+ ]
+}

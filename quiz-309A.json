@@ -1,0 +1,281 @@
+{
+ "trade": "Construction Electrician",
+ "code": "309A",
+ "questions": [
+  {
+   "q": "A Class A GFCI is designed to trip when the ground-fault current reaches approximately:",
+   "opts": [
+    "1 to 2 mA",
+    "4 to 6 mA",
+    "15 to 20 mA",
+    "30 to 50 mA"
+   ],
+   "ans": 1,
+   "why": "A Class A GFCI opens the circuit on an imbalance of about 4\u20136 mA between the live and identified conductors, low enough to protect people."
+  },
+  {
+   "q": "On a 120/208 V three-phase wye system, the 208 V is measured:",
+   "opts": [
+    "From any line to neutral",
+    "From any line to any other line",
+    "Across one winding only",
+    "From neutral to ground"
+   ],
+   "ans": 1,
+   "why": "Line-to-neutral gives 120 V (one winding); line-to-line gives 120 \u00d7 \u221a3 = 208 V."
+  },
+  {
+   "q": "If the frequency applied to an inductor doubles, its inductive reactance:",
+   "opts": [
+    "Is cut in half",
+    "Stays the same",
+    "Doubles",
+    "Quadruples"
+   ],
+   "ans": 2,
+   "why": "XL = 2\u03c0fL is directly proportional to frequency: double f, double XL."
+  },
+  {
+   "q": "A single-phase load draws 50 A at 240 V and consumes 9.6 kW. Its power factor is:",
+   "opts": [
+    "0.72",
+    "0.80",
+    "0.85",
+    "0.92"
+   ],
+   "ans": 1,
+   "why": "Apparent power S = 240 \u00d7 50 = 12 000 VA. PF = P \u00f7 S = 9 600 \u00f7 12 000 = 0.80."
+  },
+  {
+   "q": "The synchronous speed of a 6-pole motor on a 60 Hz supply is:",
+   "opts": [
+    "900 r/min",
+    "1 200 r/min",
+    "1 800 r/min",
+    "3 600 r/min"
+   ],
+   "ans": 1,
+   "why": "nS = 120f \u00f7 P = 120 \u00d7 60 \u00f7 6 = 1 200 r/min."
+  },
+  {
+   "q": "An induction motor has a synchronous speed of 1 800 r/min and runs at 1 725 r/min. The slip is approximately:",
+   "opts": [
+    "2.1%",
+    "4.2%",
+    "5.6%",
+    "7.5%"
+   ],
+   "ans": 1,
+   "why": "s = (1 800 \u2212 1 725) \u00f7 1 800 \u00d7 100 = 75 \u00f7 1 800 \u00d7 100 \u2248 4.2%."
+  },
+  {
+   "q": "To reverse the rotation of a three-phase induction motor:",
+   "opts": [
+    "Reverse all three line conductors",
+    "Interchange any two line conductors",
+    "Reverse the bonding conductor",
+    "Lower the supply frequency"
+   ],
+   "ans": 1,
+   "why": "Swapping any two lines reverses the phase sequence, which reverses the rotating field and the motor."
+  },
+  {
+   "q": "A transformer steps 600 V down to 120 V. Its turns ratio (primary to secondary) is:",
+   "opts": [
+    "1:5",
+    "5:1",
+    "1:4",
+    "4:1"
+   ],
+   "ans": 1,
+   "why": "EP/ES = NP/NS = 600/120 = 5:1. Voltage follows turns."
+  },
+  {
+   "q": "The rated secondary line current of a 75 kVA, three-phase transformer with a 208 V secondary is approximately:",
+   "opts": [
+    "104 A",
+    "125 A",
+    "208 A",
+    "360 A"
+   ],
+   "ans": 2,
+   "why": "I = kVA \u00d7 1000 \u00f7 (\u221a3 \u00d7 EL) = 75 000 \u00f7 (1.732 \u00d7 208) \u2248 75 000 \u00f7 360 \u2248 208 A."
+  },
+  {
+   "q": "The secondary circuit of a current transformer must never be:",
+   "opts": [
+    "Grounded at one point",
+    "Opened while the primary is energized",
+    "Connected to an ammeter",
+    "Run in metallic raceway"
+   ],
+   "ans": 1,
+   "why": "With the primary energized, an open CT secondary develops a dangerously high voltage. Short the secondary before removing instruments."
+  },
+  {
+   "q": "The system neutral is bonded to ground:",
+   "opts": [
+    "At every panelboard",
+    "At the service equipment only",
+    "At each receptacle",
+    "At the transformer and every sub-panel"
+   ],
+   "ans": 1,
+   "why": "Neutral and bond join once, at the service. Downstream, they remain separated so neutral current never flows on bonding paths."
+  },
+  {
+   "q": "In a sub-panel supplied from the main service, the neutral bar must be:",
+   "opts": [
+    "Bonded to the enclosure",
+    "Isolated from the enclosure",
+    "Connected to a ground rod",
+    "Removed entirely"
+   ],
+   "ans": 1,
+   "why": "Downstream of the service the neutral is isolated; only the bond bar connects to the enclosure."
+  },
+  {
+   "q": "The maximum standard overcurrent protection for a #10 AWG copper conductor in general branch-circuit use is:",
+   "opts": [
+    "20 A",
+    "25 A",
+    "30 A",
+    "40 A"
+   ],
+   "ans": 2,
+   "why": "The small-conductor limits are #14 \u2192 15 A, #12 \u2192 20 A, #10 \u2192 30 A."
+  },
+  {
+   "q": "The maximum continuous load permitted on a 100 A breaker (not 100%-rated) is:",
+   "opts": [
+    "70 A",
+    "80 A",
+    "90 A",
+    "100 A"
+   ],
+   "ans": 1,
+   "why": "Continuous loads are limited to 80% of the device rating: 0.8 \u00d7 100 = 80 A."
+  },
+  {
+   "q": "Motor branch-circuit conductors are generally sized at a minimum of:",
+   "opts": [
+    "100% of nameplate current",
+    "115% of nameplate current",
+    "125% of the full-load current from the code tables",
+    "150% of locked-rotor current"
+   ],
+   "ans": 2,
+   "why": "Conductors are sized at not less than 125% of the table full-load current for the motor's horsepower and voltage."
+  },
+  {
+   "q": "Motor overload protection is sized from:",
+   "opts": [
+    "The code table full-load current",
+    "The motor nameplate full-load current",
+    "The locked-rotor current",
+    "The breaker rating"
+   ],
+   "ans": 1,
+   "why": "Overloads protect the specific machine, so they are set from the nameplate FLA (with service-factor allowances). Conductors use the table value; overloads use the nameplate."
+  },
+  {
+   "q": "In a motor control circuit, stop buttons and safety interlocks are connected:",
+   "opts": [
+    "Normally open, in parallel",
+    "Normally open, in series",
+    "Normally closed, in series",
+    "Normally closed, in parallel"
+   ],
+   "ans": 2,
+   "why": "Any single NC device opening must stop the motor, so stops and interlocks are NC in series; starts are NO in parallel."
+  },
+  {
+   "q": "After a power failure, a motor wired with three-wire control and a seal-in contact will:",
+   "opts": [
+    "Restart automatically when power returns",
+    "Remain stopped until the start button is pressed",
+    "Run in reverse",
+    "Trip its overloads"
+   ],
+   "ans": 1,
+   "why": "The seal-in contact drops out with the supply, so the circuit provides low-voltage protection: no automatic restart."
+  },
+  {
+   "q": "A series circuit of three lamps has one burned-out (open) lamp. The voltage measured across the open lamp is:",
+   "opts": [
+    "Zero",
+    "One-third of the source voltage",
+    "The full source voltage",
+    "Twice the source voltage"
+   ],
+   "ans": 2,
+   "why": "No current flows, so no voltage drops across the good lamps; the entire source voltage appears across the open."
+  },
+  {
+   "q": "Two 100 \u03a9 resistors connected in parallel have a total resistance of:",
+   "opts": [
+    "200 \u03a9",
+    "100 \u03a9",
+    "50 \u03a9",
+    "25 \u03a9"
+   ],
+   "ans": 2,
+   "why": "Equal resistors in parallel: RT = R \u00f7 n = 100 \u00f7 2 = 50 \u03a9."
+  },
+  {
+   "q": "The power dissipated when 12 A flows through a connection with 0.5 \u03a9 of resistance is:",
+   "opts": [
+    "6 W",
+    "24 W",
+    "72 W",
+    "144 W"
+   ],
+   "ans": 2,
+   "why": "P = I\u00b2R = 12\u00b2 \u00d7 0.5 = 144 \u00d7 0.5 = 72 W \u2014 which is why a loose, resistive connection runs hot."
+  },
+  {
+   "q": "A 1 500 W heater operating for 8 hours consumes:",
+   "opts": [
+    "1.5 kWh",
+    "8 kWh",
+    "12 kWh",
+    "18.75 kWh"
+   ],
+   "ans": 2,
+   "why": "W = P \u00d7 t = 1.5 kW \u00d7 8 h = 12 kWh."
+  },
+  {
+   "q": "The general maximum conduit fill for three or more insulated conductors is:",
+   "opts": [
+    "31%",
+    "40%",
+    "53%",
+    "60%"
+   ],
+   "ans": 1,
+   "why": "With three or more conductors, the combined cross-section may occupy no more than 40% of the raceway area."
+  },
+  {
+   "q": "The approximate peak value of a 347 V RMS circuit is:",
+   "opts": [
+    "245 V",
+    "347 V",
+    "490 V",
+    "600 V"
+   ],
+   "ans": 2,
+   "why": "Peak = RMS \u00d7 1.414 = 347 \u00d7 1.414 \u2248 490 V."
+  },
+  {
+   "q": "Under the CEC, the generally accepted maximum voltage drop for a branch circuit alone, and for the total from supply to load, is:",
+   "opts": [
+    "1% and 2%",
+    "2% and 4%",
+    "3% and 5%",
+    "5% and 10%"
+   ],
+   "ans": 2,
+   "why": "The long-standing limits are 3% for the final branch circuit or feeder and 5% overall from the supply point to the point of utilization."
+  }
+ ]
+}

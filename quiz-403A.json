@@ -1,0 +1,61 @@
+{
+ "trade": "Red Seal Carpenter",
+ "code": "403A",
+ "questions": [
+  {
+   "q": "In standard Canadian residential wall framing, studs are typically spaced at:",
+   "opts": [
+    "12 in (305 mm) on centre",
+    "16 in (406 mm) on centre",
+    "20 in (508 mm) on centre",
+    "32 in (813 mm) on centre"
+   ],
+   "ans": 1,
+   "why": "16 in (406 mm) on centre is the standard stud spacing for conventional residential wall framing."
+  },
+  {
+   "q": "What is the minimum end bearing required for a stud on a sole plate?",
+   "opts": [
+    "12 mm (1/2 in)",
+    "19 mm (3/4 in)",
+    "38 mm (1 1/2 in)",
+    "51 mm (2 in)"
+   ],
+   "ans": 1,
+   "why": "The minimum end bearing for a stud on a sole plate is 19 mm (3/4 in), providing adequate support and preventing movement."
+  },
+  {
+   "q": "What is the primary function of a header in a wall opening?",
+   "opts": [
+    "To support roof trusses directly",
+    "To transfer loads above the opening",
+    "To provide a nailing surface for cladding",
+    "To stiffen the sole plate"
+   ],
+   "ans": 1,
+   "why": "A header spans the opening and transfers the load from above to the jack studs on each side."
+  },
+  {
+   "q": "A roof has a slope of 6/12. Over a horizontal run of 24 in, how much does it rise?",
+   "opts": [
+    "6 in",
+    "10 in",
+    "12 in",
+    "18 in"
+   ],
+   "ans": 2,
+   "why": "A 6/12 slope rises 6 in per 12 in of run: over 24 in, the rise is 12 in."
+  },
+  {
+   "q": "How many board feet are in a piece of lumber 2 in thick, 6 in wide and 12 ft long?",
+   "opts": [
+    "6 board feet",
+    "9 board feet",
+    "12 board feet",
+    "24 board feet"
+   ],
+   "ans": 2,
+   "why": "Board feet = (T\u2033 \u00d7 W\u2033 \u00d7 L\u2032) \u00f7 12 = (2 \u00d7 6 \u00d7 12) \u00f7 12 = 12."
+  }
+ ]
+}
